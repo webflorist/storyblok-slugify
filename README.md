@@ -39,19 +39,24 @@ Call `npx storyblok-slugify` with the following options:
 
 ```text
 --token <token>                (required) Personal OAuth access token created
-                                in the account settings of a Stoyblok user.
-                                (NOT the Access Token of a Space!)
+                               in the account settings of a Stoyblok user.
+                               (NOT the Access Token of a Space!)
 --space <space_id>             (required) ID of the space to process
 --slug-field <field>           (required) Target field to write the slug to (e.g. 'slug').
+                               Use 'translatable-slugs', if you are using Storyblok's Translatable Slug app.
+                               (Warning: Changes in Translatable Slugs will be published immediately!)
 --source-field <field>         (required) Source field to generate the slug from (e.g. 'title').
 --content-type <content-type>  Content/component type to process. Defaults to 'page'.
 --skip-stories <stories>       Comma seperated list of the full-slugs of stories to skip.
-                                (e.g. --skip-stories "home,about-us")
+                               (e.g. --skip-stories "home,about-us")
+--only-stories <stories>       Comma seperated list of the full-slugs of stories you want to limit processing to.
+                               (e.g. --only-stories "about-us")
 --locales <locales>            Comma seperated languages to process. Use 'default' for default locale.
-                                (e.g. --locales "default,de,fr")
-                                Defaults to 'default'.
+                               (e.g. --locales "default,de,fr")
+                               Defaults to 'default'.
 --force                        Creates new slug, even if slug-field already has content. Defaults to false.
 --publish                      Publish stories after updating. Defaults to false.
+--dry-run                      Only display the changes instead of performing them. Defaults to false.
 --help                         Show this help
 ```
 
@@ -72,7 +77,8 @@ npx storyblok-slugify \\
     --skip-stories "home" \\
     --locales "default,de,fr" \\
     --force \\
-    --publish
+    --publish \\
+    --dry-run
 ```
 
 ## License

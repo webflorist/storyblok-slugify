@@ -1,49 +1,49 @@
 {
-	"name": "storyblok-slugify",
-	"version": "0.0.1",
-	"description": "npx CLI tool to automatically create slugs for stories of a Storyblok space",
-	"scripts": {
-		"upgrade": "npx npm-check-updates -i -u && pnpm install",
-		"lint:js": "eslint --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --ignore-path .lintignore .",
-		"lintfix:js": "pnpm lint:js --fix",
-		"lint:prettier": "prettier --ignore-path ./.lintignore --check .",
-		"lintfix:prettier": "prettier --ignore-path ./.lintignore --write --list-different .",
-		"lint": "pnpm lint:js && pnpm lint:prettier",
-		"lintfix": "pnpm lintfix:js && pnpm lintfix:prettier"
-	},
-	"bin": {
-		"storyblok-slugify": "bin/storyblok-slugify.mjs"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/webflorist/storyblok-slugify.git"
-	},
-	"keywords": [
-		"storyblok",
-		"cms",
-		"backup",
-		"cli",
-		"node",
-		"script",
-		"npx"
-	],
-	"author": "Gerald Buttinger <gerald@code.florist>",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/webflorist/storyblok-slugify/issues"
-	},
-	"homepage": "https://github.com/webflorist/storyblok-slugify#readme",
-	"devDependencies": {
-		"eslint": "^8.53.0",
-		"eslint-config-prettier": "^9.0.0",
-		"eslint-plugin-prettier": "^5.0.1",
-		"prettier": "^3.0.3"
-	},
-	"dependencies": {
-		"@sindresorhus/slugify": "^2.2.1",
-		"archiver": "^6.0.1",
-		"minimist": "^1.2.8",
-		"storyblok-js-client": "^6.2.0",
-		"zip-lib": "^0.7.3"
-	}
+   "name": "storyblok-slugify",
+   "version": "0.0.1",
+   "description": "npx CLI tool to automatically create slugs for stories of a Storyblok space",
+   "scripts": {
+      "upgrade": "npx npm-check-updates -i -u && pnpm install",
+      "lint:js": "eslint --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --ignore-path .lintignore .",
+      "lintfix:js": "pnpm lint:js --fix",
+      "lint:prettier": "prettier --ignore-path ./.lintignore --check .",
+      "lintfix:prettier": "prettier --ignore-path ./.lintignore --write --list-different .",
+      "lint": "pnpm lint:js && pnpm lint:prettier",
+      "lintfix": "pnpm lintfix:js && pnpm lintfix:prettier"
+   },
+   "bin": {
+      "storyblok-slugify": "bin/storyblok-slugify.mjs"
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/webflorist/storyblok-slugify.git"
+   },
+   "keywords": [
+      "storyblok",
+      "cms",
+      "slugs",
+      "cli",
+      "node",
+      "script",
+      "npx"
+   ],
+   "author": "Gerald Buttinger <gerald@code.florist>",
+   "license": "MIT",
+   "bugs": {
+      "url": "https://github.com/webflorist/storyblok-slugify/issues"
+   },
+   "homepage": "https://github.com/webflorist/storyblok-slugify#readme",
+   "devDependencies": {
+      "eslint": "^8.53.0",
+      "eslint-config-prettier": "^9.0.0",
+      "eslint-plugin-prettier": "^5.0.1",
+      "prettier": "^3.1.0"
+   },
+   "dependencies": {
+      "@sindresorhus/slugify": "^2.2.1",
+      "archiver": "^6.0.1",
+      "minimist": "^1.2.8",
+      "storyblok-js-client": "^6.2.0",
+      "zip-lib": "^0.7.3"
+   }
 }
