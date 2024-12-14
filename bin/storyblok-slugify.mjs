@@ -32,6 +32,7 @@ OPTIONS
                                  Defaults to 'default'.
   --force                        Creates new slug, even if slug-field already has content. Defaults to false.
   --publish                      Publish stories after updating. Defaults to false.
+                                 WARNING: May publish previously unpublished stories.
   --dry-run                      Only display the changes instead of performing them. Defaults to false.
   --help                         Show this help
 
